@@ -23,6 +23,6 @@ This repository contains various endpoints that are used to Generate JSON-Schema
 
 Here is the Schema for FAIRDB
 
-![Schema](FAIRDB_SCHEMA.png)
+![Schema](FAIRDB_Schema.png)
 
 
