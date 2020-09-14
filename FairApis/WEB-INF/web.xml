@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+  <display-name>FAIR api</display-name>
+  <description>
+     FAIR standards api
+  </description>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+      <servlet>
+        <display-name>projects</display-name>
+        <servlet-name>projects</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.Projects</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>projects</servlet-name>
+        <url-pattern>/projects</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <display-name>resources</display-name>
+        <servlet-name>resources</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.Resources</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>resources</servlet-name>
+        <url-pattern>/resources</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <display-name>sendmail</display-name>
+        <servlet-name>sendmail</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.SendMail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sendmail</servlet-name>
+        <url-pattern>/sendmail</url-pattern>
+    </servlet-mapping>
+    
+    
+       <servlet>
+        <display-name>validmessage</display-name>
+        <servlet-name>validmessage</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.SendMessageAfterValidation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>validmessage</servlet-name>
+        <url-pattern>/validmessage</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>getinstances</display-name>
+        <servlet-name>getinstances</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.GetInstances</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getinstances</servlet-name>
+        <url-pattern>/getinstances</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>gettree</display-name>
+        <servlet-name>gettree</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.CategoryTree</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>gettree</servlet-name>
+        <url-pattern>/gettree</url-pattern>
+    </servlet-mapping>
+    
+      <servlet>
+        <display-name>fetchSynonyms</display-name>
+        <servlet-name>fetchSynonyms</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.FetchSynonyms</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fetchSynonyms</servlet-name>
+        <url-pattern>/fetchSynonyms</url-pattern>
+    </servlet-mapping>
+    
+      <servlet>
+        <display-name>resourceTypes</display-name>
+        <servlet-name>resourceTypes</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.ResourcesType</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>resourceTypes</servlet-name>
+        <url-pattern>/resourceTypes</url-pattern>
+    </servlet-mapping>
+   
+    <servlet>
+        <display-name>metadataCategories</display-name>
+        <servlet-name>metadataCategories</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.MetadataCategories</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>metadataCategories</servlet-name>
+        <url-pattern>/metadataCategories</url-pattern>
+    </servlet-mapping>
+  
+   <servlet>
+        <display-name>templates</display-name>
+        <servlet-name>templates</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.TemplateInstances</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>templates</servlet-name>
+        <url-pattern>/templates</url-pattern>
+    </servlet-mapping>
+    
+      
+         <servlet>
+        <display-name>downloadSchema</display-name>
+        <servlet-name>downloadSchema</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.DownloadJsonSchema</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>downloadSchema</servlet-name>
+        <url-pattern>/downloadSchema</url-pattern>
+    </servlet-mapping>
+    
+    
+         <servlet>
+        <display-name>downloadCsvTemplate</display-name>
+        <servlet-name>downloadCsvTemplate</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.DownloadCsvTemplate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>downloadCsvTemplate</servlet-name>
+        <url-pattern>/downloadCsvTemplate</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>downloadStandards</display-name>
+        <servlet-name>downloadStandards</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.DownloadStandards</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>downloadStandards</servlet-name>
+        <url-pattern>/downloadStandards</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <display-name>csvparser</display-name>
+        <servlet-name>csvparser</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.CSVFileParser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>csvparser</servlet-name>
+        <url-pattern>/csvparser</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <display-name>schemaGenerator</display-name>
+        <servlet-name>schemaGenerator</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.SchemaGenerator</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>schemaGenerator</servlet-name>
+        <url-pattern>/schemaGenerator</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>instanceCreator</display-name>
+        <servlet-name>instanceCreator</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.InstanceCreator</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>instanceCreator</servlet-name>
+        <url-pattern>/instanceCreator</url-pattern>
+    </servlet-mapping>
+    
+     
+     <servlet>
+        <display-name>templateCreator</display-name>
+        <servlet-name>templateCreator</servlet-name>
+        <servlet-class>edu.miami.ccs.fair.TemplateCreator</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>templateCreator</servlet-name>
+        <url-pattern>/templateCreator</url-pattern>
+    </servlet-mapping>
+    
+    
+ </web-app>

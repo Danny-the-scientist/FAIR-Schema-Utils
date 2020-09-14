@@ -1,0 +1,213 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "FAIR API specifications",
+    "description": "API offers programmatic access to create JSON Schmea and push it into Cedar",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "name": "Swagger API Team"
+    },
+    "license": {
+      "name": ""
+    }
+  },
+  "host": "rss.ccs.miami.edu/fair-apis",
+  "basePath": "",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+  "/projects": {
+      "get": {
+        "description": "List all projects which have FAIR standards such as (IDG, LINCS) ",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Will return projects. ",
+           
+          }
+        }
+      }
+    },
+    "/metadataCategories": {
+      "get": {
+        "description": "List all metadata categories such as (cell line, Antibodies, Small molecules) ",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "project",
+            "in": "query",
+            "description": "Project id that can be obtained from the /projcets api",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Will return metadata categories and various parameters available to query those. ",
+           
+          }
+        }
+      }
+    },
+    "/schemaGenerator": {
+      "get": {
+        "description": "Generate the Schema for a Metadata categorie ",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "description": "Metadata category id that can be obtained from the /metadataCategories api",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Will return JSON schema based on the Specications ",
+           
+          }
+        }
+      }
+    },
+    "/schemaValidator": {
+      "get": {
+        "description": "Validates the schema generated  ",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "description": "Metadata category id that can be obtained from the /metadataCategories api",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Validate CEDAR resources (i.e., templates, elements and instances) against the CEDAR meta-model.  ",
+           
+          }
+        }
+      }
+    },
+    "/templateCreator": {
+      "get": {
+        "description": "Creates the Cedar Template based on the generated and validatied schema ",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "description": "Metadata category id that can be obtained from the /metadataCategories api",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Creates/updates the JSON Schema and returns a template id",
+           
+          }
+        }
+      }
+    }
+    ,
+    "/downloadCsvTemplate": {
+      "get": {
+        "description": "Creates the csv Template based on the specifications ",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "description": "Metadata category id that can be obtained from the /metadataCategories api",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Will return a csv file with headers ",
+           
+          }
+        }
+      }
+    },
+    "/downloadSchema": {
+      "get": {
+        "description": "Download the generated JSON Schema ",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "description": "Metadata category id that can be obtained from the /metadataCategories api",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Will return a JSON Schema file ",
+           
+          }
+        }
+      }
+    },
+    "/templates": {
+      "get": {
+        "description": "Provides a complete list of templates available or for the specific Metadata category id ",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "description": "Metadata category id that can be obtained from the /metadataCategories api",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Will return a JSON with listof templates the josn schema genarated ",
+           
+          }
+        }
+      }
+    }
+
+}
+}
+
