@@ -1,0 +1,13 @@
+Field,Description,Importance,Data type,Ontology for Controlled Vocabulary,Ontology Class,Class Link,Field Name Link,Controlled vocabulary
+Gene,Gene that the resource is related to,1,textfield,IDG_GL,Gene,http://druggablegenome.net/Gene,http://purl.bioontology.org/ontology/OMIM/GENESYMBOL,
+Name,Name of peptide,1,textfield,,,,http://purl.org/dc/elements/1.1/title,
+Gene_symbol,Gene symbol corresponding to peptide,1,textfield,,,,http://purl.bioontology.org/ontology/OMIM/GENESYMBOL,
+Gene_ID,Entrez gene ID corresponding to peptide,1,textfield,,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P321,
+UniProt_ID,UniProt ID corresponding to peptide,1,textfield,,,,http://data.bioontology.org/ontologies/DTO,
+Peptide_sequence,Amino acid sequence of peptide,1,textfield,,,,http://www.bioassayontology.org/bao#BAO_0002818,
+Vendor,Name of the vendor/lab that provided peptide,1,textfield,,,,http://schema.org/vendor,
+Vendor_cat,Catalog ID of peptide from vendor,1,textfield,,,,http://purl.org/dc/elements/1.1/identifier,
+Data page link,External link to published data relevant for the current Pharos page,1,textfield,,,,,
+Repository,Physical repository from which resource can be purchased,1,textfield,,,,,
+Repository page link,External link to physical and/or digital repositories containing key metadata and ordering information for the resource,1,textfield,,,,,
+PRM type,Is the peptide used in PRM-based experiments,1,radio,,,,,yes;no

@@ -1,0 +1,2196 @@
+{
+	"@type": "BioChemEntity",
+	"@context": {
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"pav": "http://purl.org/pav/",
+		"bibo": "http://purl.org/ontology/bibo/",
+		"oslc": "http://open-services.net/ns/core#",
+		"schema": "http://schema.org/",
+		"schema:name": {
+			"@type": "xsd:string"
+		},
+		"schema:description": {
+			"@type": "xsd:string"
+		},
+		"pav:createdOn": {
+			"@type": "xsd:dateTime"
+		},
+		"pav:createdBy": {
+			"@type": "@id"
+		},
+		"pav:lastUpdatedOn": {
+			"@type": "xsd:dateTime"
+		},
+		"oslc:modifiedBy": {
+			"@type": "@id"
+		}
+	},
+	"type": "object",
+	"title": "Nucleic Acid Reagents   schema",
+	"description": "natural or engineered assay perturbagens built of a polynucleic structure, often used in the interference of specific sequences of DNA/RNA in cells, tissues, or animal models, including siRNA, shRNA, and guide RNAs for TALEN and CRISPR/CAS9.",
+	"properties": {
+		"@context": {
+			"type": "object",
+			"properties": {
+				"rdfs": {
+					"type": "string",
+					"format": "uri",
+					"enum": ["http://www.w3.org/2000/01/rdf-schema#"]
+				},
+				"xsd": {
+					"type": "string",
+					"format": "uri",
+					"enum": ["http://www.w3.org/2001/XMLSchema#"]
+				},
+				"pav": {
+					"type": "string",
+					"format": "uri",
+					"enum": ["http://purl.org/pav/"]
+				},
+				"schema": {
+					"type": "string",
+					"format": "uri",
+					"enum": ["http://schema.org/"]
+				},
+				"oslc": {
+					"type": "string",
+					"format": "uri",
+					"enum": ["http://open-services.net/ns/core#"]
+				},
+				"skos": {
+					"type": "string",
+					"format": "uri",
+					"enum": ["http://www.w3.org/2004/02/skos/core#"]
+				},
+				"rdfs:label": {
+					"type": "object",
+					"properties": {
+						"@type": {
+							"type": "string",
+							"enum": ["xsd:string"]
+						}
+					}
+				},
+				"schema:isBasedOn": {
+					"type": "object",
+					"properties": {
+						"@type": {
+							"type": "string",
+							"enum": ["@id"]
+						}
+					}
+				},
+				"schema:name": {
+					"type": "object",
+					"properties": {
+						"@type": {
+							"type": "string",
+							"enum": ["xsd:string"]
+						}
+					}
+				},
+				"schema:description": {
+					"type": "object",
+					"properties": {
+						"@type": {
+							"type": "string",
+							"enum": ["xsd:string"]
+						}
+					}
+				},
+				"pav:createdOn": {
+					"type": "object",
+					"properties": {
+						"@type": {
+							"type": "string",
+							"enum": ["xsd:dateTime"]
+						}
+					}
+				},
+				"pav:createdBy": {
+					"type": "object",
+					"properties": {
+						"@type": {
+							"type": "string",
+							"enum": ["@id"]
+						}
+					}
+				},
+				"pav:lastUpdatedOn": {
+					"type": "object",
+					"properties": {
+						"@type": {
+							"type": "string",
+							"enum": ["xsd:dateTime"]
+						}
+					}
+				},
+				"oslc:modifiedBy": {
+					"type": "object",
+					"properties": {
+						"@type": {
+							"type": "string",
+							"enum": ["@id"]
+						}
+					}
+				},
+				"skos:notation": {
+					"type": "object",
+					"properties": {
+						"@type": {
+							"type": "string",
+							"enum": ["xsd:string"]
+						}
+					}
+				},
+				"NA_LINCS_ID": {
+					"enum": ["http://www.drugtargetontology.org/dto/lincs_id", "https://schema.org/identifier"]
+				},
+				"NA_Name": {
+					"enum": ["http://purl.org/dc/elements/1.1/title", "https://schema.org/name"]
+				},
+				"NA_Alternative_Name": {
+					"enum": ["http://purl.org/dc/elements/1.1/title", "https://schema.org/alternativeName"]
+				},
+				"NA_Alternative_ID": {
+					"enum": ["http://purl.org/dc/elements/1.1/identifier", "https://schema.org/identifier"]
+				},
+				"NA_Center_Canonical_ID": {
+					"enum": ["http://purl.org/dc/elements/1.1/identifier", "https://schema.org/identifier"]
+				},
+				"NA_Relevant_Citations": {
+					"enum": ["http://purl.org/dc/terms/references", "https://schema.org/citation"]
+				},
+				"NA_Center_Name": {
+					"enum": ["http://purl.org/dc/elements/1.1/source", "https://schema.org/organization", "https://schema.org/legalName"]
+				},
+				"NA_Center_Batch_ID": {
+					"enum": ["http://purl.org/dc/elements/1.1/identifier", "https://schema.org/identifier"]
+				},
+				"NA_Provider_Name": {
+					"enum": ["http://schema.org/vendor", "https://schema.org/organization", "https://schema.org/legalName"]
+				},
+				"NA_Provider_Catalog_ID": {
+					"enum": ["http://purl.org/dc/elements/1.1/identifier", "https://schema.org/identifier"]
+				},
+				"NA_Provider_Batch_ID": {
+					"enum": ["http://purl.org/dc/elements/1.1/identifier", "https://schema.org/identifier"]
+				},
+				"NA_Probe_ID": {
+					"enum": ["", "https://schema.org/identifier"]
+				},
+				"NA_Type": {
+					"enum": ["", "https://schema.org/description"]
+				},
+				"NA_Subtype": {
+					"enum": ["", "https://schema.org/description"]
+				},
+				"NA_Delivery_Format": {
+					"enum": ["", "https://schema.org/description"]
+				},
+				"NA_Mode": {
+					"enum": ["", "https://schema.org/description"]
+				},
+				"NA_Target_Locus": {
+					"enum": ["", "https://schema.org/hasRepresentation"]
+				},
+				"NA_Target_Locus_Species": {
+					"enum": ["", "https://schema.org/taxonomicRange"]
+				},
+				"NA_Target_Gene_ID": {
+					"enum": ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P321", "https://schema.org/identifier"]
+				},
+				"NA_Transcript_ID": {
+					"enum": ["", "https://schema.org/identifier"]
+				},
+				"NA_Sense_Sequence": {
+					"enum": ["http://www.bioassayontology.org/bao#BAO_0002823", "https://schema.org/hasRepresentation"]
+				},
+				"NA_Validation_Information": {
+					"enum": ["", "https://schema.org/description"]
+				},
+				"NA_Driver_System": {
+					"enum": ["", "https://schema.org/description"]
+				},
+				"NA_Comments": {
+					"enum": ["http://purl.obolibrary.org/obo/IAO_0000232", "https://schema.org/description"]
+				}
+			},
+			"required": ["xsd", "pav", "schema", "oslc", "schema:isBasedOn", "schema:name", "schema:description", "pav:createdOn", "pav:createdBy", "pav:lastUpdatedOn", "oslc:modifiedBy"],
+			"additionalProperties": false
+		},
+		"@id": {
+			"type": "string",
+			"format": "uri"
+		},
+		"@type": {
+			"oneOf": [{
+				"type": "string",
+				"format": "uri"
+			}, {
+				"type": "array",
+				"minItems": 1,
+				"items": {
+					"type": "string",
+					"format": "uri"
+				},
+				"uniqueItems": true
+			}]
+		},
+		"schema:isBasedOn": {
+			"type": "string",
+			"format": "uri"
+		},
+		"schema:name": {
+			"type": "string",
+			"minLength": 1
+		},
+		"schema:description": {
+			"type": "string"
+		},
+		"pav:createdOn": {
+			"type": ["string", "null"],
+			"format": "date-time"
+		},
+		"pav:createdBy": {
+			"type": ["string", "null"],
+			"format": "uri"
+		},
+		"pav:lastUpdatedOn": {
+			"type": ["string", "null"],
+			"format": "date-time"
+		},
+		"oslc:modifiedBy": {
+			"type": ["string", "null"],
+			"format": "uri"
+		},
+		"NA_LINCS_ID": {
+			"@type": "https://schema.org/identifier",
+			"@context": {
+				"xsd": "http://www.w3.org/2001/XMLSchema#",
+				"pav": "http://purl.org/pav/",
+				"bibo": "http://purl.org/ontology/bibo/",
+				"oslc": "http://open-services.net/ns/core#",
+				"schema": "http://schema.org/",
+				"skos": "http://www.w3.org/2004/02/skos/core#",
+				"schema:name": {
+					"@type": "xsd:string"
+				},
+				"schema:description": {
+					"@type": "xsd:string"
+				},
+				"skos:prefLabel": {
+					"@type": "xsd:string"
+				},
+				"skos:altLabel": {
+					"@type": "xsd:string"
+				},
+				"pav:createdOn": {
+					"@type": "xsd:dateTime"
+				},
+				"pav:createdBy": {
+					"@type": "@id"
+				},
+				"pav:lastUpdatedOn": {
+					"@type": "xsd:dateTime"
+				},
+				"oslc:modifiedBy": {
+					"@type": "@id"
+				}
+			},
+			"type": "object",
+			"title": "NA_LINCS_ID",
+			"description": "Unique LINCS internal identifier ",
+			"_ui": {
+				"inputType": "Text"
+			},
+			"_valueConstraints": {
+				"requiredValue": false
+			},
+			"properties": {
+				"@type": {
+					"oneOf": [{
+						"type": "string",
+						"format": "uri"
+					}, {
+						"type": "array",
+						"minItems": 1,
+						"items": {
+							"type": "string",
+							"format": "uri"
+						},
+						"uniqueItems": true
+					}]
+				},
+				"@value": {
+					"type": ["string", "null"]
+				},
+				"rdfs:label": {
+					"type": ["string", "null"]
+				}
+			},
+			"required": ["@value"],
+			"schema:name": "NA_LINCS_ID",
+			"schema:description": "Unique LINCS internal identifier",
+			"pav:createdOn": "2019-06-10T16:03:09Z",
+			"schema:schemaVersion": "1.5.0",
+			"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+			"additionalProperties": false,
+			"$schema": "http://json-schema.org/draft-04/schema#"
+		},
+		"NA_Name": {
+			"@type": "https://schema.org/name",
+			"@context": {
+				"xsd": "http://www.w3.org/2001/XMLSchema#",
+				"pav": "http://purl.org/pav/",
+				"bibo": "http://purl.org/ontology/bibo/",
+				"oslc": "http://open-services.net/ns/core#",
+				"schema": "http://schema.org/",
+				"skos": "http://www.w3.org/2004/02/skos/core#",
+				"schema:name": {
+					"@type": "xsd:string"
+				},
+				"schema:description": {
+					"@type": "xsd:string"
+				},
+				"skos:prefLabel": {
+					"@type": "xsd:string"
+				},
+				"skos:altLabel": {
+					"@type": "xsd:string"
+				},
+				"pav:createdOn": {
+					"@type": "xsd:dateTime"
+				},
+				"pav:createdBy": {
+					"@type": "@id"
+				},
+				"pav:lastUpdatedOn": {
+					"@type": "xsd:dateTime"
+				},
+				"oslc:modifiedBy": {
+					"@type": "@id"
+				}
+			},
+			"type": "object",
+			"title": "NA_Name",
+			"description": "The primary name of the siRNA or shRNA or any other genetic perturbagen as chosen by LINCS ",
+			"_ui": {
+				"inputType": "Text"
+			},
+			"_valueConstraints": {
+				"requiredValue": false
+			},
+			"properties": {
+				"@type": {
+					"oneOf": [{
+						"type": "string",
+						"format": "uri"
+					}, {
+						"type": "array",
+						"minItems": 1,
+						"items": {
+							"type": "string",
+							"format": "uri"
+						},
+						"uniqueItems": true
+					}]
+				},
+				"@value": {
+					"type": ["string", "null"]
+				},
+				"rdfs:label": {
+					"type": ["string", "null"]
+				}
+			},
+			"required": ["@value"],
+			"schema:name": "NA_Name",
+			"schema:description": "The primary name of the siRNA or shRNA or any other genetic perturbagen as chosen by LINCS",
+			"pav:createdOn": "2019-06-10T16:03:09Z",
+			"schema:schemaVersion": "1.5.0",
+			"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+			"additionalProperties": false,
+			"$schema": "http://json-schema.org/draft-04/schema#"
+		},
+		"NA_Alternative_Name": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"@type": "https://schema.org/alternativeName",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Alternative_Name",
+				"description": "List of synonymous reagent names or other alternative names ",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Alternative_Name",
+				"schema:description": "List of synonymous reagent names or other alternative names",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"additionalProperties": false,
+				"$schema": "http://json-schema.org/draft-04/schema#"
+			}
+		},
+		"NA_Alternative_ID": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"@type": "https://schema.org/identifier",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Alternative_ID",
+				"description": "List of synonymous reagent IDs, or other alternative IDs ",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Alternative_ID",
+				"schema:description": "List of synonymous reagent IDs, or other alternative IDs",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"additionalProperties": false,
+				"$schema": "http://json-schema.org/draft-04/schema#"
+			}
+		},
+		"NA_Center_Canonical_ID": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"@type": "https://schema.org/identifier",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Center_Canonical_ID",
+				"description": "LINCS DSGC-specific canonical ID; will be assigned by a given LINCS DSGC according to its reagent registration scheme ",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Center_Canonical_ID",
+				"schema:description": "LINCS DSGC-specific canonical ID; will be assigned by a given LINCS DSGC according to its reagent registration scheme",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"additionalProperties": false,
+				"$schema": "http://json-schema.org/draft-04/schema#"
+			}
+		},
+		"NA_Relevant_Citations": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"$schema": "http://json-schema.org/draft-04/schema#",
+				"@type": "https://schema.org/citation",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Relevant_Citations",
+				"description": "Appropriate literature reference(s) (with PMIDs) for reagent's derivation, production, and/or validation",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false,
+					"branches": [{
+						"acronym": "IAO",
+						"source": "Information Artifact Ontology",
+						"uri": "http://purl.obolibrary.org/obo/IAO_0000301",
+						"name": "Citation",
+						"maxDepth": 0
+					}],
+					"multipleChoice": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Relevant_Citations",
+				"schema:description": "Appropriate literature reference(s) (with PMIDs) for reagent's derivation, production, and/or validation",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"additionalProperties": false
+			}
+		},
+		"NA_Center_Name": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"type": "array",
+				"minItems": 1,
+				"items": {
+					"$schema": "http://json-schema.org/draft-04/schema#",
+					"type": "object",
+					"@type": "https://schema.org/organization",
+					"@context": {
+						"xsd": "http://www.w3.org/2001/XMLSchema#",
+						"pav": "http://purl.org/pav/",
+						"bibo": "http://purl.org/ontology/bibo/",
+						"oslc": "http://open-services.net/ns/core#",
+						"schema": "http://schema.org/",
+						"skos": "http://www.w3.org/2004/02/skos/core#",
+						"schema:name": {
+							"@type": "xsd:string"
+						},
+						"schema:description": {
+							"@type": "xsd:string"
+						},
+						"skos:prefLabel": {
+							"@type": "xsd:string"
+						},
+						"skos:altLabel": {
+							"@type": "xsd:string"
+						},
+						"pav:createdOn": {
+							"@type": "xsd:dateTime"
+						},
+						"pav:createdBy": {
+							"@type": "@id"
+						},
+						"pav:lastUpdatedOn": {
+							"@type": "xsd:dateTime"
+						},
+						"oslc:modifiedBy": {
+							"@type": "@id"
+						}
+					},
+					"title": "NA_Center_Name",
+					"description": "LINCS center using the genetic perturbagen ",
+					"_ui": {
+						"inputType": "checkbox"
+					},
+					"_valueConstraints": {
+						"multipleChoice": true,
+						"requiredValue": false,
+						"literals": [{
+							"label": "HMS LINCS"
+						}, {
+							"label": " DToxS"
+						}, {
+							"label": " PCCSE"
+						}, {
+							"label": " NeuroLINCS"
+						}, {
+							"label": " MEP LINCS"
+						}, {
+							"label": " Broad Transcriptomics"
+						}]
+					},
+					"properties": {
+						"@type": {
+							"oneOf": [{
+								"type": "string",
+								"format": "uri"
+							}, {
+								"type": "array",
+								"minItems": 1,
+								"items": {
+									"type": "string",
+									"format": "uri"
+								},
+								"uniqueItems": true
+							}]
+						},
+						"@value": {
+							"type": ["string", "null"]
+						},
+						"rdfs:label": {
+							"type": ["string", "null"]
+						}
+					},
+					"required": ["@value"],
+					"additionalProperties": false,
+					"pav:createdOn": "2019-06-10T16:03:09Z",
+					"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+					"schema:schemaVersion": "1.5.0",
+					"schema:name": "NA_Center_Name",
+					"schema:description": "LINCS center using the genetic perturbagen"
+				}
+			}
+		},
+		"NA_Center_Batch_ID": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"@type": "https://schema.org/identifier",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Center_Batch_ID",
+				"description": "LINCS DSGC-specific batch ID; will be assigned by a given LINCS DSGC according to its reagent registration scheme ",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Center_Batch_ID",
+				"schema:description": "LINCS DSGC-specific batch ID; will be assigned by a given LINCS DSGC according to its reagent registration scheme",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"additionalProperties": false,
+				"$schema": "http://json-schema.org/draft-04/schema#"
+			}
+		},
+		"NA_Provider_Name": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"@type": "https://schema.org/organization",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Provider_Name",
+				"description": "Vendor or laboratory that supplied the reagent ",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Provider_Name",
+				"schema:description": "Vendor or laboratory that supplied the reagent",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"additionalProperties": false,
+				"$schema": "http://json-schema.org/draft-04/schema#"
+			}
+		},
+		"NA_Provider_Catalog_ID": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"@type": "https://schema.org/identifier",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Provider_Catalog_ID",
+				"description": "ID or catalogue number assigned to the reagent by the vendor or provider ",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Provider_Catalog_ID",
+				"schema:description": "ID or catalogue number assigned to the reagent by the vendor or provider",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"additionalProperties": false,
+				"$schema": "http://json-schema.org/draft-04/schema#"
+			}
+		},
+		"NA_Provider_Batch_ID": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"@type": "https://schema.org/identifier",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Provider_Batch_ID",
+				"description": "Batch or lot number assigned to the reagent by the vendor or provider ",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Provider_Batch_ID",
+				"schema:description": "Batch or lot number assigned to the reagent by the vendor or provider",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"additionalProperties": false,
+				"$schema": "http://json-schema.org/draft-04/schema#"
+			}
+		},
+		"NA_Probe_ID": {
+			"@type": "https://schema.org/identifier",
+			"@context": {
+				"xsd": "http://www.w3.org/2001/XMLSchema#",
+				"pav": "http://purl.org/pav/",
+				"bibo": "http://purl.org/ontology/bibo/",
+				"oslc": "http://open-services.net/ns/core#",
+				"schema": "http://schema.org/",
+				"skos": "http://www.w3.org/2004/02/skos/core#",
+				"schema:name": {
+					"@type": "xsd:string"
+				},
+				"schema:description": {
+					"@type": "xsd:string"
+				},
+				"skos:prefLabel": {
+					"@type": "xsd:string"
+				},
+				"skos:altLabel": {
+					"@type": "xsd:string"
+				},
+				"pav:createdOn": {
+					"@type": "xsd:dateTime"
+				},
+				"pav:createdBy": {
+					"@type": "@id"
+				},
+				"pav:lastUpdatedOn": {
+					"@type": "xsd:dateTime"
+				},
+				"oslc:modifiedBy": {
+					"@type": "@id"
+				}
+			},
+			"type": "object",
+			"title": "NA_Probe_ID",
+			"description": "ID of the siRNA, shRNA, sgRNA, etc. as listed in NCBI Probe database ",
+			"_ui": {
+				"inputType": "Text"
+			},
+			"_valueConstraints": {
+				"requiredValue": false
+			},
+			"properties": {
+				"@type": {
+					"oneOf": [{
+						"type": "string",
+						"format": "uri"
+					}, {
+						"type": "array",
+						"minItems": 1,
+						"items": {
+							"type": "string",
+							"format": "uri"
+						},
+						"uniqueItems": true
+					}]
+				},
+				"@value": {
+					"type": ["string", "null"]
+				},
+				"rdfs:label": {
+					"type": ["string", "null"]
+				}
+			},
+			"required": ["@value"],
+			"schema:name": "NA_Probe_ID",
+			"schema:description": "ID of the siRNA, shRNA, sgRNA, etc. as listed in NCBI Probe database",
+			"pav:createdOn": "2019-06-10T16:03:09Z",
+			"schema:schemaVersion": "1.5.0",
+			"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+			"additionalProperties": false,
+			"$schema": "http://json-schema.org/draft-04/schema#"
+		},
+		"NA_Type": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"$schema": "http://json-schema.org/draft-04/schema#",
+				"type": "object",
+				"@type": "https://schema.org/description",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"title": "NA_Type",
+				"description": "A controlled vocabulary specifying whether the reagent is Coding or Non-coding ",
+				"_ui": {
+					"inputType": "checkbox"
+				},
+				"_valueConstraints": {
+					"multipleChoice": true,
+					"requiredValue": false,
+					"literals": [{
+						"label": "Coding"
+					}, {
+						"label": "Non-Coding"
+					}]
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"additionalProperties": false,
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"schema:name": "NA_Type",
+				"schema:description": "A controlled vocabulary specifying whether the reagent is Coding or Non-coding"
+			}
+		},
+		"NA_Subtype": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"$schema": "http://json-schema.org/draft-04/schema#",
+				"type": "object",
+				"@type": "https://schema.org/description",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"title": "NA_Subtype",
+				"description": "A controlled vocabulary specifying the nucleic acid subtype. Coding subtypes: cDNA, Other. Non-coding subtypes: siRNA, sgRNA, shRNA, miRNA, Other ",
+				"_ui": {
+					"inputType": "checkbox"
+				},
+				"_valueConstraints": {
+					"multipleChoice": true,
+					"requiredValue": false,
+					"literals": [{
+						"label": "cDNA"
+					}, {
+						"label": "siRNA"
+					}, {
+						"label": "sgRNA"
+					}, {
+						"label": "shRNA"
+					}, {
+						"label": "miRNA,Other"
+					}]
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"additionalProperties": false,
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"schema:name": "NA_Subtype",
+				"schema:description": "A controlled vocabulary specifying the nucleic acid subtype. Coding subtypes: cDNA, Other. Non-coding subtypes: siRNA, sgRNA, shRNA, miRNA, Other"
+			}
+		},
+		"NA_Delivery_Format": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"$schema": "http://json-schema.org/draft-04/schema#",
+				"type": "object",
+				"@type": "https://schema.org/description",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"title": "NA_Delivery_Format",
+				"description": "A controlled vocabulary specifying the format in which the perturbation was introduced. Can be DNA or RNA ",
+				"_ui": {
+					"inputType": "checkbox"
+				},
+				"_valueConstraints": {
+					"multipleChoice": true,
+					"requiredValue": false,
+					"literals": [{
+						"label": "DNA"
+					}, {
+						"label": "RNA"
+					}]
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"additionalProperties": false,
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"schema:name": "NA_Delivery_Format",
+				"schema:description": "A controlled vocabulary specifying the format in which the perturbation was introduced. Can be DNA or RNA"
+			}
+		},
+		"NA_Mode": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"$schema": "http://json-schema.org/draft-04/schema#",
+				"type": "object",
+				"@type": "https://schema.org/description",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"title": "NA_Mode",
+				"description": "A controlled vocabulary specifying the mode of action of the reagent ",
+				"_ui": {
+					"inputType": "checkbox"
+				},
+				"_valueConstraints": {
+					"multipleChoice": true,
+					"requiredValue": false,
+					"literals": [{
+						"label": "Disruption"
+					}, {
+						"label": "Element Introduction"
+					}, {
+						"label": "Editing"
+					}]
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"additionalProperties": false,
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"schema:name": "NA_Mode",
+				"schema:description": "A controlled vocabulary specifying the mode of action of the reagent"
+			}
+		},
+		"NA_Target_Locus": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"@type": "https://schema.org/hasRepresentation",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Target_Locus",
+				"description": "The gene name of the target. Can be a gene name/ miRNA gene name or coordinates if no gene name is available ",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Target_Locus",
+				"schema:description": "The gene name of the target. Can be a gene name/ miRNA gene name or coordinates if no gene name is available",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"additionalProperties": false,
+				"$schema": "http://json-schema.org/draft-04/schema#"
+			}
+		},
+		"NA_Target_Locus_Species": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"$schema": "http://json-schema.org/draft-04/schema#",
+				"@type": "https://schema.org/taxonomicRange",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Target_Locus_Species",
+				"description": "A controlled vocabulary specifying the species of the target locus",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false,
+					"branches": [{
+						"acronym": "NCBIOTAXON",
+						"source": "NCBI Organismal Classification",
+						"uri": "http://purl.bioontology.org/ontology/NCBITAXON/131567",
+						"name": "Cellular Organisms",
+						"maxDepth": 0
+					}],
+					"multipleChoice": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Target_Locus_Species",
+				"schema:description": "A controlled vocabulary specifying the species of the target locus",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"additionalProperties": false
+			}
+		},
+		"NA_Target_Gene_ID": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"@type": "https://schema.org/identifier",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Target_Gene_ID",
+				"description": "The NCBI Entrez Gene ID for the gene targeted by the siRNA, shRNA or sgRNA ",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Target_Gene_ID",
+				"schema:description": "The NCBI Entrez Gene ID for the gene targeted by the siRNA, shRNA or sgRNA",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"additionalProperties": false,
+				"$schema": "http://json-schema.org/draft-04/schema#"
+			}
+		},
+		"NA_Transcript_ID": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"@type": "https://schema.org/identifier",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Transcript_ID",
+				"description": "The NCBI Reference Sequence IDs of the transcripts that are being targeted by the reagent ",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Transcript_ID",
+				"schema:description": "The NCBI Reference Sequence IDs of the transcripts that are being targeted by the reagent",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"additionalProperties": false,
+				"$schema": "http://json-schema.org/draft-04/schema#"
+			}
+		},
+		"NA_Sense_Sequence": {
+			"@type": "https://schema.org/hasRepresentation",
+			"@context": {
+				"xsd": "http://www.w3.org/2001/XMLSchema#",
+				"pav": "http://purl.org/pav/",
+				"bibo": "http://purl.org/ontology/bibo/",
+				"oslc": "http://open-services.net/ns/core#",
+				"schema": "http://schema.org/",
+				"skos": "http://www.w3.org/2004/02/skos/core#",
+				"schema:name": {
+					"@type": "xsd:string"
+				},
+				"schema:description": {
+					"@type": "xsd:string"
+				},
+				"skos:prefLabel": {
+					"@type": "xsd:string"
+				},
+				"skos:altLabel": {
+					"@type": "xsd:string"
+				},
+				"pav:createdOn": {
+					"@type": "xsd:dateTime"
+				},
+				"pav:createdBy": {
+					"@type": "@id"
+				},
+				"pav:lastUpdatedOn": {
+					"@type": "xsd:dateTime"
+				},
+				"oslc:modifiedBy": {
+					"@type": "@id"
+				}
+			},
+			"type": "object",
+			"title": "NA_Sense_Sequence",
+			"description": "The nucleotide sequence of the sense (passenger) strand of the siRNA, the processed shRNA or the sgRNA. The ORF sequence of the cDNA which eventually gets transcribed and translated ",
+			"_ui": {
+				"inputType": "Text"
+			},
+			"_valueConstraints": {
+				"requiredValue": false
+			},
+			"properties": {
+				"@type": {
+					"oneOf": [{
+						"type": "string",
+						"format": "uri"
+					}, {
+						"type": "array",
+						"minItems": 1,
+						"items": {
+							"type": "string",
+							"format": "uri"
+						},
+						"uniqueItems": true
+					}]
+				},
+				"@value": {
+					"type": ["string", "null"]
+				},
+				"rdfs:label": {
+					"type": ["string", "null"]
+				}
+			},
+			"required": ["@value"],
+			"schema:name": "NA_Sense_Sequence",
+			"schema:description": "The nucleotide sequence of the sense (passenger) strand of the siRNA, the processed shRNA or the sgRNA. The ORF sequence of the cDNA which eventually gets transcribed and translated",
+			"pav:createdOn": "2019-06-10T16:03:09Z",
+			"schema:schemaVersion": "1.5.0",
+			"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+			"additionalProperties": false,
+			"$schema": "http://json-schema.org/draft-04/schema#"
+		},
+		"NA_Validation_Information": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"@type": "https://schema.org/description",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Validation_Information",
+				"description": "Information about experimental verification of siRNA/shRNA activity; a reference (PubMed or other suitable reference) should be provided ",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Validation_Information",
+				"schema:description": "Information about experimental verification of siRNA/shRNA activity; a reference (PubMed or other suitable reference) should be provided",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"additionalProperties": false,
+				"$schema": "http://json-schema.org/draft-04/schema#"
+			}
+		},
+		"NA_Driver_System": {
+			"@type": "https://schema.org/description",
+			"@context": {
+				"xsd": "http://www.w3.org/2001/XMLSchema#",
+				"pav": "http://purl.org/pav/",
+				"bibo": "http://purl.org/ontology/bibo/",
+				"oslc": "http://open-services.net/ns/core#",
+				"schema": "http://schema.org/",
+				"skos": "http://www.w3.org/2004/02/skos/core#",
+				"schema:name": {
+					"@type": "xsd:string"
+				},
+				"schema:description": {
+					"@type": "xsd:string"
+				},
+				"skos:prefLabel": {
+					"@type": "xsd:string"
+				},
+				"skos:altLabel": {
+					"@type": "xsd:string"
+				},
+				"pav:createdOn": {
+					"@type": "xsd:dateTime"
+				},
+				"pav:createdBy": {
+					"@type": "@id"
+				},
+				"pav:lastUpdatedOn": {
+					"@type": "xsd:dateTime"
+				},
+				"oslc:modifiedBy": {
+					"@type": "@id"
+				}
+			},
+			"type": "object",
+			"title": "NA_Driver_System",
+			"description": "A free text field that describes the expression/driver system that was used. Examples include information about promoter, whether the expression was constitutive or inducible (and level/method of induction), or other dependencies that could effect output when the nucleic acid-based reagent is designed to be transcribed (and possible translated as protein) ",
+			"_ui": {
+				"inputType": "Text"
+			},
+			"_valueConstraints": {
+				"requiredValue": false
+			},
+			"properties": {
+				"@type": {
+					"oneOf": [{
+						"type": "string",
+						"format": "uri"
+					}, {
+						"type": "array",
+						"minItems": 1,
+						"items": {
+							"type": "string",
+							"format": "uri"
+						},
+						"uniqueItems": true
+					}]
+				},
+				"@value": {
+					"type": ["string", "null"]
+				},
+				"rdfs:label": {
+					"type": ["string", "null"]
+				}
+			},
+			"required": ["@value"],
+			"schema:name": "NA_Driver_System",
+			"schema:description": "A free text field that describes the expression/driver system that was used. Examples include information about promoter, whether the expression was constitutive or inducible (and level/method of induction), or other dependencies that could effect output when the nucleic acid-based reagent is designed to be transcribed (and possible translated as protein)",
+			"pav:createdOn": "2019-06-10T16:03:09Z",
+			"schema:schemaVersion": "1.5.0",
+			"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+			"additionalProperties": false,
+			"$schema": "http://json-schema.org/draft-04/schema#"
+		},
+		"NA_Comments": {
+			"type": "array",
+			"minItems": "1",
+			"items": {
+				"@type": "https://schema.org/description",
+				"@context": {
+					"xsd": "http://www.w3.org/2001/XMLSchema#",
+					"pav": "http://purl.org/pav/",
+					"bibo": "http://purl.org/ontology/bibo/",
+					"oslc": "http://open-services.net/ns/core#",
+					"schema": "http://schema.org/",
+					"skos": "http://www.w3.org/2004/02/skos/core#",
+					"schema:name": {
+						"@type": "xsd:string"
+					},
+					"schema:description": {
+						"@type": "xsd:string"
+					},
+					"skos:prefLabel": {
+						"@type": "xsd:string"
+					},
+					"skos:altLabel": {
+						"@type": "xsd:string"
+					},
+					"pav:createdOn": {
+						"@type": "xsd:dateTime"
+					},
+					"pav:createdBy": {
+						"@type": "@id"
+					},
+					"pav:lastUpdatedOn": {
+						"@type": "xsd:dateTime"
+					},
+					"oslc:modifiedBy": {
+						"@type": "@id"
+					}
+				},
+				"type": "object",
+				"title": "NA_Comments",
+				"description": "DSGC Comments regarding reagent ",
+				"_ui": {
+					"inputType": "Text"
+				},
+				"_valueConstraints": {
+					"requiredValue": false
+				},
+				"properties": {
+					"@type": {
+						"oneOf": [{
+							"type": "string",
+							"format": "uri"
+						}, {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"format": "uri"
+							},
+							"uniqueItems": true
+						}]
+					},
+					"@value": {
+						"type": ["string", "null"]
+					},
+					"rdfs:label": {
+						"type": ["string", "null"]
+					}
+				},
+				"required": ["@value"],
+				"schema:name": "NA_Comments",
+				"schema:description": "DSGC Comments regarding reagent",
+				"pav:createdOn": "2019-06-10T16:03:09Z",
+				"schema:schemaVersion": "1.5.0",
+				"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+				"additionalProperties": false,
+				"$schema": "http://json-schema.org/draft-04/schema#"
+			}
+		}
+	},
+	"required": ["@context", "@id", "schema:isBasedOn", "schema:name", "schema:description", "pav:createdOn", "pav:createdBy", "pav:lastUpdatedOn", "oslc:modifiedBy"],
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"pav:createdOn": "2019-06-10T16:03:09Z",
+	"pav:lastUpdatedOn": "2019-06-10T16:03:09Z",
+	"schema:name": "Nucleic Acid Reagents",
+	"schema:description": "Nucleic Acid Reagents Metadata Standards",
+	"schema:schemaVersion": "1.5.0",
+	"additionalProperties": false,
+	"pav:version": "0.0.1",
+	"bibo:status": "bibo:draft"
+}

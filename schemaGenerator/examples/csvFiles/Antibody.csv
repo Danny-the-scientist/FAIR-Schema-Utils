@@ -1,0 +1,19 @@
+Field,Description,Importance,Data type,Ontology for Controlled Vocabulary,Ontology Class,Class Link,Field Name Link,Controlled vocabulary
+Gene,Gene that the resource is related to,1,textfield,IDG_GL,Gene,http://druggablegenome.net/Gene,http://purl.bioontology.org/ontology/OMIM/GENESYMBOL,
+Clone,Clone ID for the mono-clonal antibody,2,textfield,,,,http://purl.org/dc/elements/1.1/identifier,
+Species_origin,"Species from which the antibody is derived, such as mouse, rabbit",2,list,,,,,Rabbit;Donkey;Chicken;Goat;Mouse;Rat
+Ptm_target,ID of post translational modification recognized and location (e.g. phospho-Thr156),2,textfield,,,,,
+Vendor_cat,Catalog ID of antibody from vendor,1,textfield,,,,http://purl.org/dc/elements/1.1/identifier,
+Vendor,Name of vendor antibody was obtained from,1,textfield,,,,http://schema.org/vendor,
+Clonality,State whether antibody is mono or polyclonal,1,list,,,,,Monoclonal;Polyclonal
+Target_species,Genus and species of target antibody if secondary,1,textfield,,Cellular Organism,http://purl.bioontology.org/ontology/NCBITAXON/131567,http://purl.obolibrary.org/obo/ERO_0001533,
+Target_domain,"ID of specific domain targeted, if known",1,textfield,,,,http://purl.jp/bio/11/msv/expTargetOrganism,
+Target_protein,UniProt ID of target protein if primary,1,textfield,,,,http://purl.obolibrary.org/obo/ERO_0001533,
+RRID,RRID of antibody,1,textfield,,,,http://purl.obolibrary.org/obo/ERO_0001525,
+Function,Antibody function: primary or secondary,1,list,,,,,Primary;Secondary
+Name,Reference name of antibody,1,textfield,,,,http://purl.org/dc/elements/1.1/title,
+Data page link,External link to published images relevant for the current Pharos page,1,textfield,,,,,
+Repository,Physical repository from which resource can be purchased,1,textfield,,,,,
+Repository page link,External link to physical and/or digital repositories containing key metadata and ordering information for the resource,1,textfield,,,,,
+Antibody ID,Identifier as registered by a repository,1,textfield,,,,,
+Usage,Experiments and assays for which the antibodies have been tested and validated,1,list,,,,,WB;IHC;IF;IP;Flow

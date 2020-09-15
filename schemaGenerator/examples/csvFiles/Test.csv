@@ -1,0 +1,3 @@
+Field,Description,Importance,Data type,Ontology for Controlled Vocabulary,Ontology Class,Class Link,Field Name Link,Controlled vocabulary
+Name,,1,textfield,,,,http://purl.bioontology.org/ontology/OMIM/GENESYMBOL,
+test field,,2,textfield,,,,http://purl.org/dc/elements/1.1/identifier,

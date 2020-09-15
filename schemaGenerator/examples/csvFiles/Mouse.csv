@@ -1,0 +1,10 @@
+Field,Description,Importance,Data type,Ontology for Controlled Vocabulary,Ontology Class,Class Link,Field Name Link,Controlled vocabulary
+Gene,Gene that the resource is related to,1,textfield,IDG_GL,Gene,http://druggablegenome.net/Gene,http://purl.bioontology.org/ontology/OMIM/GENESYMBOL,
+Allele,Specific nature of genetic modification made,1,textfield,,,,,
+Construct details,Link to the external repository where the construct was described,1,textfield,,,,,
+Corresponding construct,Link to the external repository where the construct was registered,1,textfield,,,,,
+Data page link,External link to published data relevant for the current Pharos page,1,textfield,,,,,
+Repository,Physical repository from which mouse can be purchased,1,textfield,,,,,
+Repository page link,Link to the vendor for the physical sample (mouse strain),1,textfield,,,,,
+MMRRC ID,ID as registered with MMRRC,1,textfield,,,,,
+Name,Appropriate strain name as registered with repository,1,textfield,,,,,
