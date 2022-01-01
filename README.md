@@ -1,6 +1,6 @@
 # FAIR-Schema-Utils
 
-This repository contains various modules that are used to Generate JSON-Schemas to represent Metadata standards  
+This repository contains various modules that are used to Generate JSON-Schemas to represent Metadata standards initially designed by me and modified/adjusted by LINCS consortia member groups.
 
 ## What's included ##
 
